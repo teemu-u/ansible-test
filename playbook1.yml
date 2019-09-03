@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: all
   tasks:
     - name: "Check for updates"
       yum: list=updates update_cache=true
