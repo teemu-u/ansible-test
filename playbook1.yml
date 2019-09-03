@@ -7,4 +7,4 @@
     - name: "List of packages to Tower Workflows"
       set_stats:
         data:
-          updates_pending:  "{{ result.stdout }}"
+          updates_pending:  "{{ result }}"
