@@ -1,0 +1,5 @@
+- hosts: localhost
+  tasks:
+    - name: "Get test results from the web"
+      debug:
+        msg: "{{ updates_pending }}"

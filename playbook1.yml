@@ -1,0 +1,10 @@
+- hosts: localhost
+  tasks:
+    - name: "Check for updates"
+      yum: list=updates update_cache=true
+      register: result
+
+    - name: "List of packages to Tower Workflows"
+      set_stats:
+        data:
+          updates_pending:  "{{ result.stdout }}"
