@@ -1,13 +1,13 @@
-hosts: localhost
-connection: local
-vars:
-  ami: ami-09de4a4c670389e4b
-  sec_group: sg-0d1e34297abbcaffb
-  region: eu-central-1
-  subnet: subnet-0cd5eac1ef8b04dc6
-  server: my_new_server
-  ssh_key: teemu-demolab-key
-  ami_user: ec2-user
-  ami_os: RHEL
-roles:
-  - sameerkasi200x.create-ec2
+- hosts: localhost
+  connection: local
+  vars:
+    ami: ami-09de4a4c670389e4b
+    sec_group: sg-0d1e34297abbcaffb
+    region: eu-central-1
+    subnet: subnet-0cd5eac1ef8b04dc6
+    server: my_new_server
+    ssh_key: teemu-demolab-key
+    ami_user: ec2-user
+    ami_os: RHEL
+  roles:
+    - sameerkasi200x.create-ec2
