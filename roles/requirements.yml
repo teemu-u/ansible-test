@@ -2,4 +2,5 @@
 
 - src: dev-sec.os-hardening
 
-- src: sameerkasi200x.create-ec2
+- name: create-ec2
+  src: https://github.com/teemu-u/ansible-role-create-ec2
