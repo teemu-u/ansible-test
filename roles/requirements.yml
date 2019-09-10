@@ -1,3 +1,5 @@
 - src: blackbaud.linux-hardening
 
 - src: dev-sec.os-hardening
+
+- src: sameerkasi200x.create-ec2
