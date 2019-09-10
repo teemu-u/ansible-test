@@ -7,4 +7,4 @@ vars:
   subnet: subnet-0cd5eac1ef8b04dc6
   server: my_new_server
 roles:
-  - create-ec2
+  - sameerkasi200x.create-ec2
