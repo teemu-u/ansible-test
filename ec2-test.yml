@@ -10,4 +10,4 @@
     ami_user: ec2-user
     ami_os: RHEL
   roles:
-    - sameerkasi200x.create-ec2
+    - create-ec2
