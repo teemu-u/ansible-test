@@ -1,0 +1,6 @@
+- src: blackbaud.linux-hardening
+
+- src: dev-sec.os-hardening
+
+- name: create-ec2
+  src: https://github.com/teemu-u/ansible-role-create-ec2
