@@ -3,11 +3,14 @@
   connection: local
   gather_facts: no
 
+  vars:
+    credentials_file: "{{ lookup('env','GCE_CREDENTIALS_FILE_PATH') }}"
+
   tasks:
   - name: create a project
     gcp_resourcemanager_project:
       name: My Sample Project
       id: test-{{ 10000000000 | random }}
       auth_kind: serviceaccount
-      service_account_file: "{{ GCE_CREDENTIALS_FILE_PATH }}"
+      service_account_file: "{{ credentials_file }}"
       state: present
