@@ -1,0 +1,13 @@
+- name: Create instances ("{{ instances }}")
+  hosts: localhost
+  connection: local
+  gather_facts: no
+
+  tasks:
+  - name: create a project
+    gcp_resourcemanager_project:
+      name: My Sample Project
+      id: test-{{ 10000000000 | random }}
+      auth_kind: serviceaccount
+      service_account_file: "{{ GCE_CREDENTIALS_FILE_PATH }}"
+      state: present
