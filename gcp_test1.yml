@@ -13,4 +13,7 @@
       id: test-{{ 10000000000 | random }}
       auth_kind: serviceaccount
       service_account_file: "{{ credentials_file }}"
+      parent:
+        type: organization
+        id: 636173955921
       state: present
