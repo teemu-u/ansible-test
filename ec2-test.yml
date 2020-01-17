@@ -6,7 +6,7 @@
     region: eu-central-1
     subnet: subnet-7853cf03
     server: my_new_server
-    ssh_key: teemu-demolab-key
+    ssh_key: ansible-eu-central
     ami_user: ec2-user
     ami_os: RHEL
   roles:
