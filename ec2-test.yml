@@ -2,9 +2,9 @@
   connection: local
   vars:
     ami: ami-09de4a4c670389e4b
-    sec_group: sg-0d1e34297abbcaffb
+    sec_group: sg-0a7aa666d5b51f2a8
     region: eu-central-1
-    subnet: subnet-0cd5eac1ef8b04dc6
+    subnet: subnet-7853cf03
     server: my_new_server
     ssh_key: teemu-demolab-key
     ami_user: ec2-user
